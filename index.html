@@ -27,17 +27,36 @@
         }
 
         .debug {
-            outline: none; /*3px solid firebrick; */
+            outline: none;
+            /*3px solid firebrick; */
         }
 
         .input-field {
             background-color: #222;
-            border-radius: 8px;
-            color: #808080;
+            border: 0;
+            color: #F7FFFF;
             font-size: 1.25em;
-            line-height: 2;
+            line-height: 2.5;
             text-align: center;
             width: 100%;
+        }
+
+        .input-field--top {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .input-field--middle {
+            margin: 0.5% 0;
+        }
+
+        .input-field--bottom {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        #logo-section {
+            margin-bottom: 8%;
         }
 
         .mobile-content {
@@ -57,6 +76,37 @@
             margin: 5% 1%;
             width: 95%;
         }
+
+        .signup-form__submit {
+            border: 0;
+            line-height: 2.5;
+            margin-top: 8%;
+            padding: 0 20px;
+            font-size: 1.25em;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: rgba(29, 162, 124, 1);
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+            width: 100%;
+        }
+
+        .signup-form__submit:hover {
+            background-color: rgba(29, 162, 124, 1);
+        }
+
+        .signup-form__submit:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
     </style>
 </head>
 
@@ -67,9 +117,12 @@
         </section>
         <section id="signup-form-section" class="signup-form-section debug">
             <form id="signup-form">
-                <input type="text" placeholder="User Name" class="input-field">
-                <input type="email" placeholder="Email Address" class="input-field">
-                <input type="password" placeholder="Password" class="input-field">
+                <input type="text" placeholder="User Name" class="input-field input-field--top">
+                <input type="email" placeholder="Email Address" class="input-field input-field--middle">
+                <input type="password" placeholder="Password" class="input-field input-field--bottom">
+                <button class="signup-form__submit" type="button">
+                    Let's Go!
+                </button>
             </form>
         </section>
     </main>
