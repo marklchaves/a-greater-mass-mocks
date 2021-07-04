@@ -26,6 +26,12 @@
             padding: 0;
         }
 
+        .full-screen-center {
+            display: grid;
+            height: 100vh;
+            place-items: center;
+        }
+
         .debug {
             outline: none;
             /*3px solid firebrick; */
@@ -42,8 +48,8 @@
         }
 
         .input-field--top {
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
 
         .input-field--middle {
@@ -51,8 +57,8 @@
         }
 
         .input-field--bottom {
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
 
         #logo-section {
@@ -110,7 +116,7 @@
     </style>
 </head>
 
-<body>
+<body class="full-screen-center">
     <main class="mobile-content">
         <section id="logo-section" class="debug">
             <img src="a-greater-mass-logo-aqua-512w.webp" alt="A Greater Mass Logo" width="290" height="290">
