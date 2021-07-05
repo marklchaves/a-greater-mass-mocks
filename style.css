@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --black-colour: #222;
+  --primary-border-radius: 12px;
+  --white-colour: #f7ffff;
+}
+
+body {
+  background-color: var(--white-colour);
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.full-screen--center {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.debug {
+  outline: none;
+  /*3px solid firebrick; */
+}
+
+.input-container {
+  background-color: var(--black-colour);
+  border: 1px solid var(--black-colour);
+  border-radius: var(--primary-border-radius);
+  padding: 1%;
+}
+
+.input-field {
+  background-color: var(--black-colour);
+  border: 0;
+  color: var(--white-colour);
+  font-size: 1.25em;
+  line-height: 2.5;
+  text-align: center;
+  width: 100%;
+}
+
+.input-field--middle {
+  border-bottom: 2px solid var(--white-colour);
+  border-top: 2px solid var(--white-colour);
+  margin: 0.5% 0;
+}
+
+#logo-section {
+  margin-bottom: 8%;
+}
+
+.mobile-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  max-width: 375px;
+  min-width: 360px;
+  padding: 0;
+  width: 100vw;
+}
+
+.signup-form-section {
+  margin: 5% 1%;
+  width: 95%;
+}
+
+.signup-form__submit {
+  border: 0;
+  line-height: 2.5;
+  margin-top: 8%;
+  padding: 0 20px;
+  font-size: 1.25em;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-colour);
+  text-shadow: 1px 1px 1px var(--black-colour);
+  border-radius: 10px;
+  background-color: rgba(29, 162, 124, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.signup-form__submit:hover {
+  background-color: rgba(29, 162, 124, 1);
+}
+
+.signup-form__submit:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
