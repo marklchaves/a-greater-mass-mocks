@@ -10,6 +10,8 @@ html {
 
 :root {
   --black-colour: #222;
+  --green-colour: #1da27c;
+  --grey-colour: #777777;
   --primary-border-radius: 12px;
   --purple-colour: #9170b0;
   --white-colour: #f7ffff;
@@ -36,8 +38,8 @@ body {
 }
 
 .debug {
-  /* outline: none; */
-  outline: 3px solid firebrick;
+  outline: none;
+  /* outline: 3px solid firebrick; */
 }
 
 .mobile-content {
@@ -55,7 +57,7 @@ body {
 
 article {
   height: 100%;
-  margin: 5% 0;
+  padding: 5% 0;
   overflow-y: scroll;
   width: 100%;
 }
@@ -74,8 +76,8 @@ article {
 }
 
 .heading {
-    font-size: 1.3rem;
-    font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .salutation {
@@ -125,7 +127,7 @@ article {
   text-transform: uppercase;
   color: var(--white-colour);
   text-shadow: 1px 1px 1px var(--black-colour);
-  border-radius: 10px;
+  border-radius: var(--primary-border-radius);
   background-color: rgba(29, 162, 124, 1);
   background-image: linear-gradient(
     to top left,
@@ -166,7 +168,18 @@ article {
 }
 
 .level-details__heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 12% 0 8% 0;
   text-align: center;
+}
+
+.button--enabled {
+  background-color: var(--green-colour);
+}
+
+.button--disabled {
+  background-color: var(--grey-colour);
 }
 
 .time-line__button-wrapper {
@@ -175,11 +188,14 @@ article {
 }
 
 .time-line__button {
+  border-radius: var(--primary-border-radius);
+
+  color: var(--white-colour);
+  padding: 5% 0;
   width: 90%;
-  padding: 2%;
 }
 
 .time-line__separator {
-  padding: 3% 0;
+  padding: 5% 0;
   text-align: center;
 }
