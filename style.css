@@ -11,6 +11,7 @@ html {
 :root {
   --black-colour: #222;
   --primary-border-radius: 12px;
+  --purple-colour: #9170b0;
   --white-colour: #f7ffff;
 }
 
@@ -65,7 +66,16 @@ article {
 }
 
 .header__banner {
+  background-color: var(--purple-colour);
+  color: var(--white-colour);
+  line-height: 1.5;
+  padding: 3% 0;
   text-align: center;
+}
+
+.heading {
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
 .salutation {
