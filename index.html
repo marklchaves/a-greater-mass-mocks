@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Time Line</title>
 
     <link rel="stylesheet" href="./style.css">
 
@@ -13,23 +13,62 @@
 
 <body class="full-screen--center">
     <main class="mobile-content">
-        <section id="logo-section" class="debug">
-            <img src="a-greater-mass-logo-aqua-512w.webp" alt="A Greater Mass Logo" width="290" height="290">
-        </section>
-        <section 
-            id="signup-form-section" 
-            class="signup-form-section debug">
-            <form id="signup-form">
-                <div class="input-container">
-                    <input type="text" placeholder="User Name" class="input-field">
-                    <input type="email" placeholder="Email Address" class="input-field input-field--middle">
-                    <input type="password" placeholder="Password" class="input-field">
+        <article>
+            <header class="debug">
+                <div class="header__top debug">
+                    <div>Logo</div>
+                    <div class="salutation">Salutation</div>
+                    <div>Kebab</div>
                 </div>
-                <button class="signup-form__submit" type="button">
-                    Let's Go!
-                </button>
-            </form>
-        </section>
+                <div class="header__banner debug">
+                    <h2>People Using A Greater Mass:</h2>
+                    <p>72</p>
+                    <h2>Total Actions Complete</h2>
+                    <p>432</p>
+                </div>
+            </header>
+            <section id="time-line" class="time-line">
+                <div class="time-line__row">
+                    <div class="level-image debug">Logo</div>
+                    <div class="level-details debug">
+                        <h2 class="level-details__heading">Plastic Level 1</h2>
+                        <div class="time-line__button-wrapper">
+                            <button class="time-line__button">GO!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-line__separator">o</div>
+                <div class="time-line__row">
+                    <div class="level-image debug">Logo</div>
+                    <div class="level-details debug">
+                        <h2 class="level-details__heading">Online Forest</h2>
+                        <div class="time-line__button-wrapper">
+                            <button class="time-line__button">ACTION LOCKED</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-line__separator">o</div>
+                <div class="time-line__row">
+                    <div class="level-image debug">Logo</div>
+                    <div class="level-details debug">
+                        <h2 class="level-details__heading">Looking After You</h2>
+                        <div class="time-line__button-wrapper">
+                            <button class="time-line__button">ACTION LOCKED</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-line__separator">o</div>
+                <div class="time-line__row">
+                    <div class="level-image debug">Logo</div>
+                    <div class="level-details debug">
+                        <h2 class="level-details__heading">Microplastics</h2>
+                        <div class="time-line__button-wrapper">
+                            <button class="time-line__button">ACTION LOCKED</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
     </main>
 </body>
 
