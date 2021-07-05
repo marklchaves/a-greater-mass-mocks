@@ -11,6 +11,7 @@ html {
 :root {
   --black-colour: #222;
   --green-colour: #1da27c;
+  --grey-light-colour: #707070;
   --grey-colour: #777777;
   --primary-border-radius: 12px;
   --purple-colour: #9170b0;
@@ -67,10 +68,27 @@ article {
   grid-template-columns: auto 2fr auto;
 }
 
+.profile-image-wrapper {
+  margin: auto 0;
+}
+
+.profile-image {
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.kebab {
+  color: var(--grey-light-colour);
+  padding-right: 10px;
+  font-size: 2.5rem;
+}
+
 .header__banner {
   background-color: var(--purple-colour);
   color: var(--white-colour);
   line-height: 1.5;
+  margin-bottom: 5%;
   padding: 3% 0;
   text-align: center;
 }
@@ -81,7 +99,7 @@ article {
 }
 
 .salutation {
-  margin-left: 5%;
+  margin: auto 5%;
 }
 
 .input-container {
@@ -160,9 +178,20 @@ article {
 }
 
 .level-image {
+  background-image: url(./LogoOutlineNoText-132w.png);
   display: grid;
+  height: 132px;
   place-items: center;
+  width: 132px;
 }
+
+/*
+.level-image--active {
+  background-color: var(--green-colour);
+  border-radius: 50%;
+}
+*/
+
 .level-details {
   padding: 0 2%;
 }
