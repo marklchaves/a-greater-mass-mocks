@@ -9,10 +9,12 @@ html {
 }
 
 :root {
-  --black-colour: #222;
+  --black-colour: #222222;
+  --cream-color: #fff9f3;
   --green-colour: #1da27c;
   --grey-light-colour: #707070;
   --grey-colour: #777777;
+  --orange-colour: #f5a02b;
   --primary-border-radius: 12px;
   --purple-colour: #9170b0;
   --white-colour: #f7ffff;
