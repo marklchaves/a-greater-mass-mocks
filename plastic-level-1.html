@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 
-  <body class="full-screen--center">
+  <body style="background-color: #9170b0;" class="full-screen--center">
     <main class="mobile-content">
       <article>
         <header class="debug">
@@ -19,6 +19,8 @@
               <div class="action-title">Plastic<br />Level 1</div>
             </div>
           </div>
+          <div class="header__image">
+          </div>
           <div class="header__banner debug">
             <div class="heading">
               Number of People Who Have Completed This Action:
@@ -26,7 +28,7 @@
             <div class="heading"><strong>70</strong></div>
           </div>
         </header>
-        <section id="action" class="action">
+        <section id="action-overview" class="action action__overview">
           <div class="action__row action__row--center">
             <p>We’re starting you off with a simple bit of waste reduction.</p>
             <p>
@@ -38,6 +40,26 @@
             <button class="button--wire">SHOW MORE</button>
           </div>
         </section>
+        <section id="action-graphic" class="action action__graphic">
+          <div class="action__row action__row--center action__image">
+          </div>
+        </section>
+        <section id="action-list" class="action action__to-do-list">
+          <div class="action__row action__row--center">
+            <p>
+              Actions To Take
+            </p>
+            <ul style="text-align: left";>
+              <li style="margin-bottom: 5%; list-style: square;">Obtain reusable coffee cup.</li>
+              <li style="list-style: square;">Use your coffee cup for a week without buying any disposable coffee cups.</li>
+            </ul>
+          </div>
+        </section>
+        <footer id="footer" class="action__footer">
+          <div class="action__row action__row--center">
+            <p>Show us your Actions on social media: tag @agreatermass and use #agreatermass</p>
+          </div>
+        </footer>
       </article>
     </main>
   </body>

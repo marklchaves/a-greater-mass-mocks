@@ -10,7 +10,7 @@ html {
 
 :root {
   --black-colour: #222222;
-  --cream-color: #fff9f3;
+  --cream-colour: #fff9f3;
   --green-colour: #1da27c;
   --grey-light-colour: #707070;
   --grey-colour: #777777;
@@ -60,14 +60,25 @@ body {
 
 article {
   height: 100%;
-  padding: 5% 0;
+  padding: 0;
   overflow-y: scroll;
   width: 100%;
 }
 
 .header__top {
+  background-color: var(--white-colour);
   display: grid;
   grid-template-columns: auto 2fr auto;
+  padding: 3% 0;
+}
+
+.header__image {
+  background-image: url(./plastic-bottles-360w.png);
+  background-size: cover;
+  display: flex;
+  height: 103px;
+  justify-content: center;
+  width: 100%;
 }
 
 .profile-image__wrapper {
@@ -90,7 +101,6 @@ article {
   background-color: var(--purple-colour);
   color: var(--white-colour);
   line-height: 1.5;
-  margin-bottom: 5%;
   padding: 3% 2%;
   text-align: center;
 }
@@ -228,8 +238,23 @@ article {
   text-align: center;
 }
 
-.header__top--action {
-  margin-bottom: 3%;
+.action {
+  margin: 0;
+  padding: 3% 0;
+}
+
+.action__overview {
+  background-color: var(--cream-colour);
+}
+
+.action__to-do-list {
+  background-color: var(--black-colour);
+  color: var(--white-colour);
+}
+
+.action__graphic {
+  background-color: var(--black-colour);
+  padding: 0;
 }
 
 .action-title__wrapper {
@@ -261,6 +286,21 @@ article {
   text-align: center;
 }
 
+.action__footer {
+  background-color: var(--purple-colour);
+  color: var(--white-colour);
+}
+
+#action-graphic .action__image {
+  background-image: url(./plastic-level-1-graphic-360w.png);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  height: 375px;
+  justify-content: center;
+  width: 100%;
+}
+
 .button--wire {
   background-color: transparent;
   border: 4px solid var(--green-colour);
@@ -268,5 +308,6 @@ article {
   color: var(--green-colour);
   font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 2%;
   padding: 3% 8%;
 }
