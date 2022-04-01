@@ -190,7 +190,7 @@ article {
 }
 
 .level-image {
-  /* background-image: url(./LogoOutlineNoText-132w.png); */
+  background-image: url(./LogoOutlineNoText-132w.png);
   display: grid;
   height: 132px;
   place-items: center;
@@ -214,6 +214,10 @@ article {
 
 .button--enabled {
   background-color: var(--green-colour);
+}
+
+.button--completed {
+  background-color: var(--orange-colour);
 }
 
 .button--disabled {
@@ -310,4 +314,14 @@ article {
   font-weight: 600;
   margin-bottom: 2%;
   padding: 3% 8%;
+}
+
+.actions-list {
+  list-style: none;
+}
+
+.actions-list input[type="checkbox"] {
+  font-size: 1.25rem;
+  height: 1.25rem;
+  width: 1.25rem;
 }
